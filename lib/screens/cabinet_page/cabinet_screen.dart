@@ -100,7 +100,7 @@ class CabinetScreen extends StatelessWidget {
                   ),
                   child: SingleChildScrollView(
                     //for padding
-                    physics: BouncingScrollPhysics(),
+                    physics: const BouncingScrollPhysics(),
                     child: Column(
                       children: [
                         Row(
@@ -152,6 +152,56 @@ class CabinetScreen extends StatelessWidget {
                             ),
                           ],
                         ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        //   children: [
+                        //     HomeCard(
+                        //       onPress: () {
+                        //         Navigator.pushNamed(
+                        //             context, PaymentScreen.routeName);
+                        //       },
+                        //       icon: 'assets/icons/groups.svg',
+                        //       title: 'Qruplar',
+                        //     ),
+                        //     HomeCard(
+                        //       onPress: () {
+                        //         //go to assignment screen here
+                        //       },
+                        //       icon: 'assets/icons/table.svg',
+                        //       title: 'Dərs Cədvəli',
+                        //     ),
+                        //   ],
+                        // ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        //   children: [
+                        //     HomeCard(
+                        //       onPress: () {},
+                        //       icon: 'assets/icons/exam.svg',
+                        //       title: 'Imtahanlar',
+                        //     ),
+                        //     HomeCard(
+                        //       onPress: () {},
+                        //       icon: 'assets/icons/task.svg',
+                        //       title: 'Tapşırıqlar',
+                        //     ),
+                        //   ],
+                        // ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        //   children: [
+                        //     HomeCard(
+                        //       onPress: () {},
+                        //       icon: 'assets/icons/settings.svg',
+                        //       title: 'Tənzimləmələr',
+                        //     ),
+                        //     HomeCard(
+                        //       onPress: () {},
+                        //       icon: 'assets/icons/exit.svg',
+                        //       title: 'Çıxış Et',
+                        //     ),
+                        //   ],
+                        // ),
                       ],
                     ),
                   ),
@@ -162,5 +212,3 @@ class CabinetScreen extends StatelessWidget {
         ));
   }
 }
-
-
